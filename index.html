@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font StyleSheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gabarito:wght@400..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- https://errormakesclever.github.io/Nostra-Ecommerce-Js/index.html -->
+
+<body>
+    <!-- Offer Message -->
+    <section class="offer-message" id="off-msg">
+        <h2 class="message">Sign Up and <span style="font-weight: 700;">GET 20% OFF</span> for your first Order</h2>
+        <i id="close-offer-msg" class="fa-solid fa-xmark"
+            style="color: #dedede; font-size: 25px; margin-left: 100px; cursor: pointer;"></i>
+    </section>
+
+    <!-- Navbar Section -->
+    <section class="navbar">
+        <h1 class="navbar__heading">Nostra</h1>
+        <ul class="navbar__lists">
+            <li><a href="">Home</a></li>
+            <li><a href="">New Arrival</a></li>
+            <li><a href="">Most Wanted</a></li>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menubar -->
+        <div class="menubar">
+            <i class="fa-solid fa-bars" style="color: #000000; font-size: 25px;"></i>
+        </div>
+    </section>
+
+    <!-- Slide Images Section -->
+    <section class="slide">
+        <div class="slide__image">
+            <img src="./images/slider-one.png" alt="slider image">
+            <img src="./images/slider-two.png" alt="slider image">
+            <img src="./images/slider-three.png" alt="slider image">
+        </div>
+
+        <i class="fa-solid fa-angle-left left-arrow"
+            style="color: #ffffff; z-index: 3; position: absolute; left: 50px;"></i>
+        <div class="slide__desc">
+            <h1 class="slide__desc__head">Level up your style with our</h1>
+            <h3 style="font-size: 20px;">Summer Collections</h3>
+            <button class="slide__desc__btn">Shop Now <i class="fa-solid fa-arrow-right-long"
+                    style="color: #000000;"></i></button>
+        </div>
+        <i class="fa-solid fa-angle-right right-arrow"
+            style="color: #ffffff; z-index: 3; position: absolute; right: 50px;"></i>
+
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brand">
+        <h1 class="brand__heading">Brands</h1>
+
+        <div class="brand__container">
+            <div class="brand-box">
+                <img src="./images/brand-puma.png" alt="puma-image">
+                <h2>Puma</h2>
+            </div>
+            <div class="brand-box">
+                <img src="./images/brand-adidas.png" alt="Adidas-image">
+                <h2>Adidas</h2>
+            </div>
+            <div class="brand-box">
+                <img src="./images/brand-simple.png" alt="Simple-image">
+                <h2>Simple</h2>
+            </div>
+            <div class="brand-box">
+                <img src="./images/brand-leaves.png" alt="Leaves-image">
+                <h2>Leaves</h2>
+            </div>
+            <div class="brand-box">
+                <img src="./images/brand-behance.png" alt="Behance-image">
+                <h2>Behance</h2>
+            </div>
+            <div class="brand-box">
+                <img src="./images/brand-twitch.png" alt="Twitch-image">
+                <h2>Twitch</h2>
+            </div>
+            <div class="brand-box">
+                <img src="./images/brand-leaves.png" alt="Leaves-image">
+                <h2>Leaves</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Section -->
+
+    <section class="customer-exp">
+
+        <div class="customer-exp__titles">
+            <h1 class="customer-exp__heading">We Provide Best Customer Experiences</h1>
+            <h2 class="customer-exp__sub-heading">|| We ensure that our customer have the best shopping experience</h2>
+        </div>
+
+        <div class="customer-exp__container">
+            <div class="customer-exp__box">
+                <i class="fa-regular fa-circle-check" style="color: #000000;"></i>
+                <h3>Original Products</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, eius.</p>
+            </div>
+            <div class="customer-exp__box">
+                <i class="fa-regular fa-face-smile" style="color: #000000;"></i>
+                <h3>Satisfication Guarantee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, corporis?</p>
+            </div>
+            <div class="customer-exp__box">
+                <i class="fa-solid fa-broom" style="color: #000000;"></i>
+                <h3>New Arrival Everyday</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, cumque?</p>
+            </div>
+            <div class="customer-exp__box">
+                <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                <h3>Fast & Free Shipping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="new-arrival">
+        <h1 class="new-arrival__heading">New Arrivals</h1>
+
+        <div class="new-arrival__container">
+            <div class="new-arrival__box">
+                <img src="./images/new-arrival-1.png" alt="New-arrival-image ">
+                <button class="new-arrival-shop__btn">Shop Now <i class="fa-solid fa-arrow-right-long"
+                        style="color: #000000;"></i></button>
+                <div class="new-arrival__overlay"></div>
+            </div>
+            <div class="new-arrival__box">
+                <img src="./images/new-arrival-3.png" alt="New-arrival-image ">
+                <button class="new-arrival-shop__btn">Shop Now <i class="fa-solid fa-arrow-right-long"
+                        style="color: #000000;"></i></button>
+                <div class="new-arrival__overlay"></div>
+            </div>
+            <div class="new-arrival__box">
+                <img src="./images/new-arrival-2.png" alt="New-arrival-image ">
+                <button class="new-arrival-shop__btn">Shop Now <i class="fa-solid fa-arrow-right-long"
+                        style="color: #000000;"></i></button>
+                <div class="new-arrival__overlay"></div>
+            </div>
+            <div class="new-arrival__box">
+                <img src="./images/new-arrival-4.png" alt="New-arrival-image ">
+                <button class="new-arrival-shop__btn">Shop Now <i class="fa-solid fa-arrow-right-long"
+                        style="color: #000000;"></i></button>
+                <div class="new-arrival__overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Wanted -->
+
+    <section class="most-wanted">
+        <h1 class="most-wanted__heading">Most Wanted</h1>
+
+        <div class="most-wanted__container">
+            <div class="most-wanted__box">
+                <img src="./images/m-w1.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+            <div class="most-wanted__box">
+                <img src="./images/m-w2.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+            <div class="most-wanted__box">
+                <img src="./images/m-w3.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+            <div class="most-wanted__box">
+                <img src="./images/m-w4.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+            <div class="most-wanted__box">
+                <img src="./images/m-w5.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+            <div class="most-wanted__box">
+                <img src="./images/m-w6.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+            <div class="most-wanted__box">
+                <img src="./images/m-w7.jpg" alt="">
+                <div class="sale">Sale</div>
+                <i class="fa-regular fa-heart heart-icon" style="color: #000000;"></i>
+                <i class="fa-solid fa-heart heart-icon-red" style="color: #ff0000;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited Offer -->
+
+    <section class="limited-offer">
+        <img src="./images/limited-offer.jpg" alt="limited-offer-image" class="limited-offer__image">
+        <div class="limited-offer__desc">
+            <h1 class="limited-offer__heading">Limited Offer </h1>
+            <h2 class="limited-offer__off">35% OFF on this for the first 30 Customers</h2>
+            <button class="limited-offer__desc__btn">Shop Now <i class="fa-solid fa-arrow-right-long"
+                    style="color: #000000;"></i></button>
+        </div>
+    </section>
+
+    <!-- News-Letter Section -->
+    <section class="news-letter">
+        <h1 class="news-letter__heading">Join our News Letter</h1>
+        <h2 class="news-letter__desc">Signup for our email newspaper to get exclusive discounts, updates, and more</h2>
+        <input type="text" class="news-letter__input-box">
+        <div>
+            <button class="news-letter__subsc-btn">Subscribe <i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff; font-size: 27px;"></i></button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <h1 class="footer__heading">Nostra</h1>
+        <h2 class="footer__desc">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those
+            interest</h2>
+        <div class="social-media">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+        </div>
+
+        <h3 class="footer__nostra">&copy;  2023 Nostra.com</h3>
+    </footer>
+
+    <!-- Java Script -->
+    <script src="index.js"></script>
+</body>
+
+</html>

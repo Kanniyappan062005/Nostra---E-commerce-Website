@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+/* Offer Section */
+
+.offer-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 41, 44);
+    color: #dedede;
+    padding: 5px;
+}
+
+.message {
+    font-weight: 400;
+}
+
+/* Navbar Section */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+}
+
+.navbar__heading {
+    font-size: 25px;
+}
+
+.navbar__lists {
+    display: flex;
+    gap: 50px;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.navbar__lists a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__lists a:hover {
+    text-decoration: underline;
+}
+
+.menubar {
+    display: none;
+}
+
+/* Slide Image Section */
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide__image {
+    display: flex;
+    width: 300%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide__image img {
+    width: 100%;
+    height: 500px;
+}
+
+.slide__desc {
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+
+.slide__desc__head {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.slide__desc__btn {
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 150px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+/* Brands Section */
+.brand {
+    margin: 30px 10px 0px 10px;
+}
+
+.brand__heading {
+    font-size: 30px;
+}
+
+.brand__container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.brand-box {
+    flex-basis: 13%;
+    text-align: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.brand-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.brand-box h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Customer Experience */
+.customer-exp{
+    margin: 100px 10px 0px 10px;
+}
+.customer-exp__titles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-exp__heading{
+    flex-basis: 30%;
+    font-size: 33px;
+}
+
+.customer-exp__sub-heading{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.customer-exp__container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.customer-exp__box{
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    flex-basis: 23%;
+    flex-grow: 1;
+}
+
+.customer-exp__box i{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.customer-exp__box h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.customer-exp__box p{
+    font-size: 12px;
+}
+
+/* New Arrivals */
+.new-arrival{
+    margin: 100px 10px 0px 10px;
+}
+
+.new-arrival__heading{
+    font-size: 30px;
+}
+
+.new-arrival__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.new-arrival__box{
+    position: relative;
+    flex-basis: 280px;
+    height: 280px;
+}
+
+.new-arrival__box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.new-arrival-shop__btn{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 13px ;
+    z-index: 2;
+}
+
+.new-arrival__overlay{
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Most Wanted */
+.most-wanted{
+    margin: 100px 10px 0px 10px;
+}
+
+.most-wanted__heading{
+    font-size: 30px;
+}
+
+.most-wanted__container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;  /* Use auto instead of scroll for better behavior */
+    scroll-snap-type: x mandatory; /* Smooth scrolling experience */
+    padding-bottom: 10px; /* Prevent cutting off scroll */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.most-wanted__container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+}
+
+.most-wanted__box{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    flex: 0 0 auto; /* Prevent shrinking */
+    scroll-snap-align: start; /* Snap to each item */
+}
+
+.most-wanted__box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.most-wanted__box .sale{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: red;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    font-size: 23px;
+    font-family: 'poppins';
+    border-radius: 10px;
+}
+
+.most-wanted__box .heart-icon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 45px;
+}
+
+.most-wanted__box .heart-icon-red{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 45px;
+    display: none;
+}
+
+/* Limited Offer */
+
+.limited-offer{
+    margin: 20px 10px 0px 10px;
+    background-color: rgb(31, 30, 44);
+    color: white;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 30px;
+}
+
+.limited-offer__image{
+    margin-left: 30px;
+}
+
+.limited-offer__heading{
+    font-size: 50px;
+}
+
+.limited-offer__off{
+    font-size: 25px;
+}
+
+.limited-offer__desc__btn{
+    padding: 15px ;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* News Letter */
+.news-letter{
+    margin: 50px 10px 0px 10px;
+    text-align: center;
+}
+
+.news-letter__heading{
+    font-size: 50px;
+}
+
+.news-letter__desc{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top:5px ;
+}
+
+.news-letter__input-box{
+    width: 80%;
+    height: 40px;
+    border: 2px solid black;
+    margin-top: 10px;
+    font-size:20px ;
+}
+
+.news-letter__subsc-btn{
+    padding: 10px 15px 10px 15px;
+    margin-top:15px ;
+    border: none;
+    border-radius: 10px;
+    background-color:  rgb(31, 30, 44);
+    color: white;
+    font-size: 25px;
+
+}
+
+/* Footer Section */
+footer{
+    background-color:rgb(31, 30, 44) ;
+    padding: 50px;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer__heading{
+    font-size: 50px;
+}
+
+.footer__desc{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.social-media i{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.footer__nostra{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* Media Query */
+
+@media screen and (max-width:680px) {
+    body {
+        font-size: 10px;
+    }
+
+    /* Navbar */
+
+    .navbar__lists {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    /* Slide Image */
+
+    .slide__image img {
+        height: 250px;
+    }
+
+    .slide__desc__head {
+        font-size: 30px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 50px;
+    }
+
+    .brand__heading{
+        font-size: 25px;
+    }
+
+    .brand-box img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .brand-box h2{
+        font-size: 10px;
+    }
+
+    /* Customer Exp */
+    .customer-exp__heading{
+        font-size: 12px;
+    }
+
+    .customer-exp__sub-heading{
+        font-size: 10px;
+    }
+
+    .customer-exp__box i{
+        font-size: 18px;
+    }
+    
+    .customer-exp__box h3{
+        font-size: 7px;
+    }
+    
+    .customer-exp__box p{
+        font-size: 5px;
+    }
+}

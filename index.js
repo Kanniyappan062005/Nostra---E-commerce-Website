@@ -48,7 +48,26 @@ mobileNavbarOverlay.addEventListener("click", function(){
     mobileNavbarOverlay.style.display="none"
 })
 
-mobileNavOptClicktoClose.addEventListener("click", function(){
-    mobileNavbar.style.display="none"
-    mobileNavbarOverlay.style.display="none"
+// mobileNavOptClicktoClose.addEventListener("click", function(){
+//     mobileNavbar.style.display="none"
+//     mobileNavbarOverlay.style.display="none"
+// });
+
+// Heart Icon click to Red
+var mwList = document.querySelectorAll(".most-wanted__box");
+
+mwList.forEach(function (box) {
+    var heartIconEmpty = box.querySelector(".heart-icon");
+    var heartIconRed = box.querySelector(".heart-icon-red");
+
+    heartIconEmpty.addEventListener("click", function () {
+        heartIconEmpty.style.display = "none";
+        heartIconRed.style.display = "block";
+    });
+
+    heartIconRed.addEventListener("click", function () {
+        heartIconRed.style.display = "none";
+        heartIconEmpty.style.display = "block";
+    });
 });
+

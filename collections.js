@@ -55,3 +55,40 @@ searchInput.addEventListener("keyup", function () {
         }
     }
 })
+
+// Select all checkboxes and product items
+var checkboxes = document.getElementsByName("check");
+var productList = document.querySelectorAll(".product-box");
+
+// Function to update product display based on checked checkboxes
+function updateProductDisplay() {
+    // Get all checked values
+    var checkedValues = Array.from(checkboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value.toUpperCase());
+
+    // If no checkboxes are checked, show all products
+    if (checkedValues.length === 0) {
+        productList.forEach(product => product.style.display = "block");
+        return;
+    }
+
+    // Loop through each product and check if it matches any checked value
+    productList.forEach(function(product) {
+        var productName = product.querySelector(".product-box__name").textContent.toUpperCase();
+
+        // Show product if it matches at least one checked value, otherwise hide it
+        if (checkedValues.some(value => productName.includes(value))) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+
+// Attach event listener to each checkbox
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener("change", updateProductDisplay);
+});
+
+

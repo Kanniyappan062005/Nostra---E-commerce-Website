@@ -166,7 +166,7 @@ body {
 .left-arrow,
 .right-arrow {
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 150px;
     color: white;
@@ -559,10 +559,65 @@ footer{
     width: 100%;
 }
 
+/* ***CONTACT PAGE STYLESHEET */
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact__container{
+    background-color:rgb(34, 33, 43) ;
+    padding: 5%;
+    color: rgb(238, 238, 238);
+    width: 65%;
+    border-radius: 15px;
+}
+
+.contact__heading{
+    font-size: 200%;
+    text-align: center;
+}
+
+.contact__opt{
+    margin-top: 20px;
+}
+
+.contact__opt label{
+    display: block;
+    font-size: 150%;
+}
+
+.contact__opt input, textarea{
+    width: 90%;
+    padding:2% 3% 2% 3% ;
+    margin-top: 5px;
+    font-size: 130%;
+    border-radius: 5px;
+}
+
+.contact__opt input, textarea:focus{
+    outline: none;
+}
+
+.contact__submit-btn{
+    border: none;
+    background-color: rgb(35, 103, 250);
+    color: white;
+    padding: 2% 3% 2% 3%;
+    font-size: 150%;
+    margin-top: 10px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.contact__submit-btn:hover{
+    opacity: 0.8;
+}
+
 
 /* Media Query */
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:800px) {
     body {
         font-size: 10px;
     }

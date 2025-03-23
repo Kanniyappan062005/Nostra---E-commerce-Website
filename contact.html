@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nostra</title>
+    <title>Trend Threads</title>
 
     <!-- StyleSheet -->
     <link rel="stylesheet" href="style.css">
@@ -25,13 +25,14 @@
 <body>
     <!-- Navbar Section -->
     <section class="navbar">
-        <h1 class="navbar__heading">Nostra</h1>
+        <h1 class="navbar__heading">Trend Threads</h1>
         <ul class="navbar__lists">
             <li><a href="index.html">Home</a></li>
             <li><a href="#new-arrival">New Arrival</a></li>
             <li><a href="#most-wanted">Most Wanted</a></li>
             <li><a href="collections.html">Collections</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="log-in.html">Login</a></li>
         </ul>
 
         <!-- Mobile Menubar-Icon -->
@@ -49,31 +50,32 @@
             <li><a href="#most-wanted">Most Wanted</a></li>
             <li><a href="collections.html">Collections</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="log-in.html">Login</a></li>
         </ul>
     </section>
     <div class="mobile-navbar__overlay"></div>
 
     <section class="contact">
-
         <div class="contact__container">
             <h1 class="contact__heading">Contact Us</h1>
-
-            <div class="contact__opt">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required>
-            </div>
-
-            <div class="contact__opt">
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" required>
-            </div>
-
-            <div class="contact__opt">
-                <label for="msg">Message:</label>
-                <textarea name="msg" rows="5" placeholder="Text Message..."></textarea>
-            </div>
-
-            <button class="contact__submit-btn">Submit</button>
+            <form id="contactForm" action="contact.php" method="POST">
+                <div class="contact__opt">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="contact__opt">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="contact__opt">
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="msg" rows="5" placeholder="Text Message..." required></textarea>
+                </div>
+    
+                <button type="submit" class="contact__submit-btn">Submit</button>
+            </form>
         </div>
     </section>
 
@@ -90,7 +92,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <h1 class="footer__heading">Nostra</h1>
+        <h1 class="footer__heading">Trend Threads</h1>
         <h2 class="footer__desc">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those
             interest</h2>
         <div class="social-media">
@@ -99,7 +101,7 @@
             <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
         </div>
 
-        <h3 class="footer__nostra">&copy;  2023 Nostra.com</h3>
+        <h3 class="footer__nostra">&copy;  2023 Trend Threads.com</h3>
     </footer>
 
     <!-- Java Script -->

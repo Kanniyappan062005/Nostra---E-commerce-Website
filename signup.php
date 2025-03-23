@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        echo "<script>alert('Email already registered!'); window.location.href='log-in.html';</script>";
+        echo "<script>alert('This email is already registered. Please Login!'); window.location.href='log-in.html';</script>";
     } else {
         // Insert user
         $stmt = $conn->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
